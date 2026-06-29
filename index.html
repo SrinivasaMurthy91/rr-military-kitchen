@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Military Kitchen</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            background: #07140f;
+            color: #fff;
+            overflow-x: hidden
+        }
+.sub-title{
+    display:block;
+    text-align:center;
+    color:#f8c146;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+.title{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:15px;
+    font-family:'Cinzel',serif;
+    color:white;
+}
+
+.menu-desc{
+    max-width:850px;
+    margin:0 auto 60px;
+    text-align:center;
+    color:#cfcfcf;
+    line-height:32px;
+    font-size:18px;
+}
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+            background: rgba(0, 0, 0, .45);
+            backdrop-filter: blur(10px);
+            z-index: 999
+        }
+
+        header h2 {
+            font-family: Cinzel, serif;
+            color: #d9b46a
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px
+        }
+
+       .hero{
+
+height:100vh;
+
+background:url("https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.overlay{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.8));
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:850px;
+
+padding:20px;
+
+animation:fadeUp 1.5s;
+
+}
+
+.tag{
+
+display:inline-block;
+
+background:#d4af37;
+
+padding:10px 25px;
+
+border-radius:30px;
+
+font-size:15px;
+
+margin-bottom:25px;
+
+color:black;
+
+font-weight:bold;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+line-height:85px;
+
+font-family:'Cinzel',serif;
+
+margin-bottom:20px;
+
+}
+
+.hero h1 span{
+
+color:#f8c146;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:35px;
+
+color:#ddd;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:18px 40px;
+
+border-radius:50px;
+
+font-size:18px;
+
+text-decoration:none;
+
+transition:.4s;
+
+font-weight:bold;
+
+}
+
+.btn1{
+
+background:#f8c146;
+
+color:#111;
+
+}
+
+.btn1:hover{
+
+transform:translateY(-8px);
+
+}
+
+.btn2{
+
+background:#25D366;
+
+color:white;
+
+}
+
+.btn2:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 15px 40px rgba(37,211,102,.5);
+
+}
+
+.scroll-down{
+
+position:absolute;
+
+bottom:25px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:35px;
+
+animation:bounce 2s infinite;
+
+color:#fff;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translate(-50%,0);
+
+}
+
+50%{
+
+transform:translate(-50%,12px);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(80px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+       
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 16px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700
+        }
+
+        .gold {
+            background: #c89b3c;
+            color: #111
+        }
+
+        .whatsapp {
+            background: #25D366;
+            color: #fff
+        }
+
+        .section {
+            padding: 90px 8%
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.4rem;
+            font-family: Cinzel;
+            margin-bottom: 40px;
+            color: #d9b46a
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+           
+        }
+
+        .card {
+            background: #10261d;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: .4s
+        }
+
+        .card:hover {
+            transform: translateY(-10px)
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover
+        }
+
+        .card div {
+            padding: 18px
+        }
+
+        .price {
+            color: #d9b46a;
+            font-size: 1.4rem;
+            font-weight: 700
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center
+        }
+
+        .stat {
+            background: #10261d;
+            padding: 25px;
+            border-radius: 18px
+        }
+
+        footer {
+            background: #020805;
+            padding: 30px;
+            text-align: center;
+            color: #aaa
+        }
+        .order-btn{
+    display:block;
+    margin-top:15px;
+    text-align:center;
+    background:#25D366;
+    color:#fff;
+    padding:12px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.order-btn:hover{
+    background:#128C7E;
+    transform:translateY(-3px);
+}
+
+.card{
+    overflow:hidden;
+}
+
+.card img{
+    transition:.5s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 8%;
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(12px);
+    z-index:999;
+}
+
+.logo img{
+    height:55px;      /* Adjust between 55px–75px if needed */
+    width:auto;
+    object-fit:contain;
+    transition:.3s;
+    float: left;
+}
+
+.logo img:hover{
+    transform:scale(1.08);
+}
+    </style>
+</head>
+
+<body>
+   <header>
+<div>
+    <a class="logo" href="https://ibb.co/hzmC53Y"><img src="https://i.ibb.co/M0C9TFB/logoo-RR.jpg" alt="logoo-RR" border="0" /></a>
+   <h2>RR Military Kitchen</h2>
+</div>
+   
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+   
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="tag">
+                🔥 Authentic South Indian Food
+            </span>
+
+            <h1>
+                Experience the Taste of
+                <span>RR Military Kitchen</span>
+            </h1>
+
+            <p>
+                Authentic Andhra & South Indian cuisine made using premium spices sourced directly from Kerala, Andhra
+                Pradesh and across India.
+                Freshly prepared every day with love, tradition and military discipline.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="btn btn1">
+                    Explore Menu
+                </a>
+
+                <a href="https://wa.me/447407304692?text=Hi%20I%20would%20like%20to%20place%20an%20order%20from%20RR%20Military%20Kitchen."
+                    class="btn btn2" target="_blank">
+
+                    <i class="fab fa-whatsapp"></i>
+
+                    Order on WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-down">
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+    </section>
+    <section class="section">
+        <div class="stats">
+            <div class="stat">
+                <h2>100%</h2>
+                <p>Fresh Ingredients</p>
+            </div>
+            <div class="stat">
+                <h2>No Dalda</h2>
+                <p>No Artificial Colours</p>
+            </div>
+            <div class="stat">
+                <h2>★★★★★</h2>
+                <p>Loved by Customers</p>
+            </div>
+            <div class="stat">
+                <h2>UK</h2>
+                <p>Hatfield Cloud Kitchen</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="title">Our Story</h2>
+        <p style="max-width:900px;margin:auto;text-align:center;line-height:1.8">
+            RR Military Kitchen started as a cloud kitchen serving authentic Andhra and South Indian food through
+            WhatsApp orders.
+            Our spices are sourced from India and every dish is prepared with traditional recipes. Our vision is to
+            expand into a premium restaurant brand, social media, YouTube and multiple UK locations.
+        </p>
+    </section>
+<section id="menu" class="section">
+
+    <span class="sub-title">Our Delicious Menu</span>
+
+    <h2 class="title">
+        Signature Dishes
+    </h2>
+
+    <p class="menu-desc">
+        Discover authentic Andhra and South Indian flavours crafted with premium spices sourced from across India. Every dish is freshly prepared with passion, tradition, and military discipline.
+    </p>
+
+   <div class="cards">
+       
+    <div class="card">
+        <img src="https://www.donneculture.com/assets/new_hero6-C3eyCXhr.png">
+        <div>
+            <h3>🍗 Donne Biryani</h3>
+            <p>Traditional military-style biryani with authentic spices.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£7.99</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Donne%20Biryani">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Chitti Muthyala -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80" alt="Chitti Muthyala Biryani">
+        <div>
+            <h3>🍛 Chitti Muthyala Biryani</h3>
+            <p>Premium short grain biryani with rich Andhra flavours.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£8.99</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Chitti%20Muthyala%20Biryani">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Chicken 65 -->
+    <div class="card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.Z_PSdfeHKcjCiF7Lp4tU2wHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <div>
+            <h3>🍗 Chicken 65</h3>
+            <p>Crispy spicy chicken cooked in authentic South Indian style.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£6.99</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Chicken%2065">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Fish Pulusu -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80" alt="Fish Pulusu">
+        <div>
+            <h3>🐟 Fish Pulusu</h3>
+            <p>Traditional Andhra fish curry with tamarind gravy.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£9.99</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Fish%20Pulusu">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Prawns -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Prawns Vepudu">
+        <div>
+            <h3>🦐 Prawns Vepudu</h3>
+            <p>Fresh prawns tossed with signature RR spices.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£11.99</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Prawns%20Vepudu">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Mutton -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Mutton Ghee Roast">
+        <div>
+            <h3>🥩 Mutton Ghee Roast</h3>
+            <p>Slow cooked mutton with aromatic ghee and spices.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£12.99</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Mutton%20Ghee%20Roast">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Dosa -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=800&q=80" alt="Ghee Karam Dosa">
+        <div>
+            <h3>🥞 Ghee Karam Dosa</h3>
+            <p>Crispy dosa topped with homemade karam podi & ghee.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£5.99</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Ghee%20Karam%20Dosa">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Idli -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=800&q=80" alt="Idli">
+        <div>
+            <h3>🍚 Ghee Karam Idli</h3>
+            <p>Soft idlis served with ghee, podi and fresh chutneys.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£4.99</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Ghee%20Karam%20Idli">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Punugulu -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Punugulu">
+        <div>
+            <h3>🥟 Gunta Punugulu</h3>
+            <p>Golden fried Andhra snack served with chutneys.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£4.50</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Punugulu">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Filter Coffee -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Filter Coffee">
+        <div>
+            <h3>☕ Filter Coffee</h3>
+            <p>Authentic South Indian brass filter coffee.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£2.99</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Filter%20Coffee">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Mango Lassi -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=800&q=80" alt="Mango Lassi">
+        <div>
+            <h3>🥭 Mango Lassi</h3>
+            <p>Refreshing creamy mango yogurt drink.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£3.50</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Mango%20Lassi">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+    <!-- Apricot Delight -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Apricot Delight">
+        <div>
+            <h3>🍮 Apricot Delight</h3>
+            <p>Rich creamy dessert loved by everyone.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="price">£4.99</p>
+            <a class="order-btn" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20want%20to%20order%20Apricot%20Delight">
+                Order Now
+            </a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+    
+
+    <section class="section">
+        <h2 class="title">Customer Reviews</h2>
+        <div class="cards">
+            <div class="card">
+                <div>
+                    <h3>★★★★★</h3>
+                    <p>"Authentic Andhra taste. Feels like home."</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>★★★★★</h3>
+                    <p>"Best biryani in Hatfield."</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>★★★★★</h3>
+                    <p>"Fresh food and amazing service."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="title">Order Today</h2>
+        <p style="text-align:center">WhatsApp: <b>07407 304692</b></p>
+        <p style="text-align:center;margin:20px">
+            <a class="btn whatsapp" target="_blank"
+                href="https://wa.me/447407304692?text=Hi%20I%20would%20like%20to%20place%20an%20order%20from%20RR%20Military%20Kitchen.">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>RR Military Kitchen • Authentic South Indian Flavours • Hatfield, UK</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.card').forEach(c => {
+            c.addEventListener('mousemove', e => {
+                const r = c.getBoundingClientRect();
+                const x = e.clientX - r.left - r.width / 2;
+                const y = e.clientY - r.top - r.height / 2;
+                c.style.transform = `perspective(800px) rotateY(${x / 25}deg) rotateX(${-y / 25}deg) translateY(-8px)`;
+            });
+            c.addEventListener('mouseleave', () => c.style.transform = 'translateY(0)');
+        });
+    </script>
+</body>
+
+</html>
